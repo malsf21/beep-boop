@@ -15,6 +15,7 @@
 		878093462432C488009CFA9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878093442432C488009CFA9A /* LaunchScreen.storyboard */; };
 		878093512432C488009CFA9A /* beep_boopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878093502432C488009CFA9A /* beep_boopTests.swift */; };
 		8780935C2432C488009CFA9A /* beep_boopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780935B2432C488009CFA9A /* beep_boopUITests.swift */; };
+		8780936A2432CEC3009CFA9A /* BLEConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878093692432CEC3009CFA9A /* BLEConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		878093572432C488009CFA9A /* beep-boopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "beep-boopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8780935B2432C488009CFA9A /* beep_boopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beep_boopUITests.swift; sourceTree = "<group>"; };
 		8780935D2432C488009CFA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		878093692432CEC3009CFA9A /* BLEConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				878093392432C480009CFA9A /* AppDelegate.swift */,
 				8780933B2432C480009CFA9A /* SceneDelegate.swift */,
 				8780933D2432C480009CFA9A /* ContentView.swift */,
+				878093692432CEC3009CFA9A /* BLEConnection.swift */,
 				8780933F2432C488009CFA9A /* Assets.xcassets */,
 				878093442432C488009CFA9A /* LaunchScreen.storyboard */,
 				878093472432C488009CFA9A /* Info.plist */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8780933A2432C480009CFA9A /* AppDelegate.swift in Sources */,
+				8780936A2432CEC3009CFA9A /* BLEConnection.swift in Sources */,
 				8780933C2432C480009CFA9A /* SceneDelegate.swift in Sources */,
 				8780933E2432C480009CFA9A /* ContentView.swift in Sources */,
 			);
@@ -439,6 +443,7 @@
 				DEVELOPMENT_TEAM = 36XGK73SPU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "beep-boop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +464,7 @@
 				DEVELOPMENT_TEAM = 36XGK73SPU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "beep-boop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

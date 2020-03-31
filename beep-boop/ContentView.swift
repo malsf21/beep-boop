@@ -9,9 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var bleConnection = BLEConnection()
     var body: some View {
-        Text("Hello, World!")
-    }
+        NavigationView {
+          VStack (alignment: .leading){
+            Text("Peripheral Name").font(.title).foregroundColor(.purple)
+            List (bleConnection.scannedBLEDevices) { device in
+                Text("Name: \(device.name)  RSSI: \(String(device.rssi))")
+            }
+          }
+          .padding()
+          .navigationBarTitle("BLE Devices")
+        }
+        .onAppear(perform: startBLEScan)
+      }
+      
+      private func startBLEScan(){
+        bleConnection.startCentralManager()
+      }
 }
 
 struct ContentView_Previews: PreviewProvider {
